@@ -1,0 +1,12 @@
+[submodule "commit"]
+	path = commit
+	url = https://github.com/jewzaam/claude-skill-commit.git
+[submodule "fix"]
+	path = fix
+	url = https://github.com/jewzaam/claude-skill-fix.git
+[submodule "review"]
+	path = review
+	url = https://github.com/jewzaam/claude-skill-review.git
+[submodule "summarize-transcript"]
+	path = summarize-transcript
+	url = https://github.com/jewzaam/claude-skill-summarize-transcript.git
