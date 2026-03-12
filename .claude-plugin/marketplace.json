@@ -1,0 +1,32 @@
+{
+  "name": "jewzaam-plugins",
+  "owner": {
+    "name": "jewzaam"
+  },
+  "plugins": [
+    {
+      "name": "review",
+      "source": "./plugins/review",
+      "description": "Review and evaluate code, skills, and other artifacts",
+      "version": "0.1.0"
+    },
+    {
+      "name": "commit",
+      "source": "./plugins/commit",
+      "description": "Commit staged changes with concise messages and proper attribution",
+      "version": "0.1.0"
+    },
+    {
+      "name": "fix",
+      "source": "./plugins/fix",
+      "description": "Run make and fix issues, optionally in a submodule",
+      "version": "0.1.0"
+    },
+    {
+      "name": "summarize-transcript",
+      "source": "./plugins/summarize-transcript",
+      "description": "Create executive summary and detailed timeline from meeting transcripts",
+      "version": "0.1.0"
+    }
+  ]
+}

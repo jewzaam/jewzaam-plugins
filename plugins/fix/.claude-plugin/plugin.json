@@ -1,0 +1,8 @@
+{
+  "name": "fix",
+  "description": "Run make and fix issues, optionally in a submodule",
+  "version": "0.1.0",
+  "author": {
+    "name": "jewzaam"
+  }
+}

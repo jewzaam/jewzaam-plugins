@@ -1,24 +1,39 @@
-# claude-skills
+# jewzaam-plugins
 
-Meta-repo managing Claude Code skills as git submodules.
+Plugin marketplace for Claude Code.
 
-## Skills
+## Plugins
 
-| Skill | Description |
-|-------|-------------|
-| [commit](https://github.com/jewzaam/claude-skill-commit) | Commit staged changes with concise messages and proper attribution |
-| [fix](https://github.com/jewzaam/claude-skill-fix) | Run make and fix issues, optionally in a submodule |
-| [review](https://github.com/jewzaam/claude-skill-review) | Review, assess, or audit a codebase or implementation |
-| [summarize-transcript](https://github.com/jewzaam/claude-skill-summarize-transcript) | Summarize a Claude conversation transcript |
+| Plugin | Commands | Description |
+|--------|----------|-------------|
+| review | `/review:code`, `/review:skill` | Review and evaluate code, skills, and other artifacts |
+| commit | `/commit` | Commit staged changes with concise messages and proper attribution |
+| fix | `/fix` | Run make and fix issues, optionally in a submodule |
+| summarize-transcript | `/summarize-transcript` | Create executive summary and detailed timeline from meeting transcripts |
 
-## Usage
+## Installation
 
 ```bash
-make init     # Initialize and update all submodules
-make deinit   # Deinitialize submodules and clear cache
-make help     # Show available targets
+# Add the marketplace
+/plugin marketplace add jewzaam/jewzaam-plugins
+
+# Install plugins
+/plugin install review@jewzaam-plugins
+/plugin install commit@jewzaam-plugins
+/plugin install fix@jewzaam-plugins
+/plugin install summarize-transcript@jewzaam-plugins
 ```
 
 ## Structure
 
-Each skill lives in its own upstream repo and is included here as a submodule. Claude Code discovers skills by scanning subdirectories for `SKILL.md` files.
+Each plugin lives in `plugins/<name>/` with:
+- `.claude-plugin/plugin.json` — Plugin metadata
+- `commands/` — Slash commands (`.md` files)
+- `skills/` — Auto-triggered skills (`SKILL.md` files) (optional)
+- `reference/` — Shared reference docs (optional)
+
+## Validation
+
+```bash
+make validate
+```
