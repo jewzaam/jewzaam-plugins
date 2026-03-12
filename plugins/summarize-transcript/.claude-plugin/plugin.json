@@ -1,0 +1,8 @@
+{
+  "name": "summarize-transcript",
+  "description": "Create executive summary and detailed timeline from meeting transcripts",
+  "version": "0.1.0",
+  "author": {
+    "name": "jewzaam"
+  }
+}

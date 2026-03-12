@@ -1,24 +1,14 @@
 # claude-skills Makefile
-# Submodule management for Claude Code skills
+# Plugin marketplace management
 
-.PHONY: init deinit help
+.PHONY: validate help
 .DEFAULT_GOAL := help
 
 help:
-	@echo "claude-skills submodule management"
+	@echo "claude-skills plugin marketplace"
 	@echo ""
 	@echo "Targets:"
-	@echo "  init    - Initialize and update all submodules"
-	@echo "  deinit  - Deinitialize submodules and clear cache (clean slate)"
+	@echo "  validate  - Validate marketplace.json structure"
 
-init:
-	git submodule update --init --recursive
-	git submodule update --remote
-	git submodule foreach 'git checkout main'
-
-deinit:
-	@echo "Deinitializing all submodules..."
-	git submodule deinit -f --all
-	@echo "Removing submodule cache..."
-	rm -rf .git/modules/*
-	@echo "Done. Run 'make init' to reinitialize."
+validate:
+	claude /plugin validate .
