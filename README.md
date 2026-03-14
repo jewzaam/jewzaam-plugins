@@ -29,8 +29,17 @@ Plugin marketplace for Claude Code.
 To pick up the latest changes, uninstall and reinstall:
 
 ```bash
-/plugin uninstall <plugin>@jewzaam-plugins
-/plugin install <plugin>@jewzaam-plugins
+# Uninstall plugins
+/plugin uninstall review@jewzaam-plugins
+/plugin uninstall commit@jewzaam-plugins
+/plugin uninstall fix@jewzaam-plugins
+/plugin uninstall summarize-transcript@jewzaam-plugins
+
+# Install plugins
+/plugin install review@jewzaam-plugins
+/plugin install commit@jewzaam-plugins
+/plugin install fix@jewzaam-plugins
+/plugin install summarize-transcript@jewzaam-plugins
 ```
 
 ## Structure
