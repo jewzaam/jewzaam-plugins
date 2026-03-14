@@ -4,12 +4,12 @@ Plugin marketplace for Claude Code.
 
 ## Plugins
 
-| Plugin | Commands | Description |
-|--------|----------|-------------|
+| Plugin | Skills | Description |
+|--------|--------|-------------|
 | review | `/review:code`, `/review:skill` | Review and evaluate code, skills, and other artifacts |
-| commit | `/commit` | Commit staged changes with concise messages and proper attribution |
-| fix | `/fix` | Run make and fix issues, optionally in a submodule |
-| summarize-transcript | `/summarize-transcript` | Create executive summary and detailed timeline from meeting transcripts |
+| commit | `/commit:commit` | Commit staged changes with concise messages and proper attribution |
+| fix | `/fix:fix` | Run make and fix issues, optionally in a submodule |
+| summarize-transcript | `/summarize-transcript:summarize-transcript` | Create executive summary and detailed timeline from meeting transcripts |
 
 ## Installation
 
@@ -24,12 +24,20 @@ Plugin marketplace for Claude Code.
 /plugin install summarize-transcript@jewzaam-plugins
 ```
 
+## Upgrading
+
+To pick up the latest changes, uninstall and reinstall:
+
+```bash
+/plugin uninstall <plugin>@jewzaam-plugins
+/plugin install <plugin>@jewzaam-plugins
+```
+
 ## Structure
 
 Each plugin lives in `plugins/<name>/` with:
 - `.claude-plugin/plugin.json` — Plugin metadata
-- `commands/` — Slash commands (`.md` files)
-- `skills/` — Auto-triggered skills (`SKILL.md` files) (optional)
+- `skills/` — Skills (`<skill-name>/SKILL.md` files)
 - `reference/` — Shared reference docs (optional)
 
 ## Validation
