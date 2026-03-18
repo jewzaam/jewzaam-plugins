@@ -10,3 +10,6 @@
 [submodule "summarize-transcript"]
 	path = summarize-transcript
 	url = https://github.com/jewzaam/claude-skill-summarize-transcript.git
+[submodule "feedback"]
+	path = feedback
+	url = git@github.com:jewzaam/claude-skill-feedback.git
