@@ -16,3 +16,6 @@
 [submodule "cited-research"]
 	path = cited-research
 	url = git@github.com:jewzaam/claude-skill-cited-research.git
+[submodule "engineering-estimate"]
+	path = engineering-estimate
+	url = git@github.com:jewzaam/claude-skill-engineering-estimate.git
