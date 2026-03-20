@@ -19,3 +19,6 @@
 [submodule "engineering-estimate"]
 	path = engineering-estimate
 	url = git@github.com:jewzaam/claude-skill-engineering-estimate.git
+[submodule "voice"]
+	path = voice
+	url = git@github.com:jewzaam/claude-skill-voice.git
